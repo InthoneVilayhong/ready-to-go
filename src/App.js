@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Board from "./Board";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <div className="header">
+                <i class="fa-solid fa-rocket rocket"></i>
+                <h1>React Counter</h1>
+            </div>
+
+            <div className="container">
+                <Board />
+            </div>
+        </div>
+    );
 }
 
 export default App;
